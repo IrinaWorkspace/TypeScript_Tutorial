@@ -85,12 +85,34 @@
 //   //But it is very important ot always return value
 //  }
 
-function calculateTax(income: number, taxYear = 2022): number {
-  // ? make the argument optional
-  // 2 option to avoid:
-  //01. taxYear? + (taxYear || 2022)
-  //02. taxYear=2022 + (taxYear < 2022)
-  if ((taxYear || 2022) < 2022) return income * 1.2;
-  return income * 1.3;
-}
-calculateTax(10_0000, 2022);
+// function calculateTax(income: number, taxYear = 2022): number {
+//   // ? make the argument optional
+//   // 2 option to avoid:
+//   //01. taxYear? + (taxYear || 2022)
+//   //02. taxYear=2022 + (taxYear < 2022)
+//   if ((taxYear || 2022) < 2022) return income * 1.2;
+//   return income * 1.3;
+// }
+// calculateTax(10_0000, 2022);
+
+//let employee = { id: 1 };
+//employee.name = "Irina"; // not valid in TS
+// let employee: { id: number; name: string } = { id: 1 }; // if we leave { id: 1 }: the error is Property 'name' is missing in type '{ id: number; }' but required in type '{ id: number; name: string; }
+// 01 var: let employee: { id: number; name?: string } = { id: 1 };
+// 02 var let employee: { id: number; name: string } = { id: 1, name: '' };
+
+//read only option:
+//let employee: { readonly id: number; name: string } = { id: 1, name: "" }; // this will prevent change in the value, for example employee.id=0;
+
+//good practices: https://youtu.be/d56mG7DezGs?t=2825 :
+// let employee: {
+//   readonly id: number;
+//   name: string;
+//   retire: (date: Date) => void;
+// } = {
+//   id: 1,
+//   name: "",
+//   retire: (date: Date) => {
+//     console.log(date);
+//   },
+// };
