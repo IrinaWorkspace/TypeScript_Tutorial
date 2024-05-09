@@ -46,9 +46,15 @@
 // const large = 3;
 
 //explanation of enum: https://youtu.be/d56mG7DezGs?t=2076
-enum Size {
-  Small = 1,
-  Medium,
-  Large,
-}
-// Medium will be 2, Large will be 3. But if they are a strings- they should have values.
+// enum Size {
+//   Small = 1,
+//   Medium,
+//   Large,
+// }
+// // Medium will be 2, Large will be 3. But if they are a strings- they should have values.
+// let mySize: Size = Size.Medium;
+// console.log(mySize);
+// // to view in the console:
+// //tsc
+// // dist/index.js
+// !important- if we define the enum as constant ( const enum)- the code into the JS file will be optimized.
