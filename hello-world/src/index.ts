@@ -33,3 +33,22 @@
 
 //let numbers: number[] = [1,2,'3']; //TS
 //let numbers: number[] = [1, 2, 3]; //TS  === let numbers:  [1, 2, 3];
+
+//1, Irina
+
+// let user: [number, string] = [1, "Irina"];
+// // let user2: [number, string] = [1, 'Irina', 2];
+
+// user.push(1); //bug in TS.
+
+// const small = 1;
+// const medium = 2;
+// const large = 3;
+
+//explanation of enum: https://youtu.be/d56mG7DezGs?t=2076
+enum Size {
+  Small = 1,
+  Medium,
+  Large,
+}
+// Medium will be 2, Large will be 3. But if they are a strings- they should have values.
