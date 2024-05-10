@@ -116,3 +116,45 @@
 //     console.log(date);
 //   },
 // };
+
+////////////////////  ADVANCE/ TYPES ////////////////////////
+// type Employee = {
+//   readonly id: number;
+//   name: string;
+//   retire: (date: Date) => void;
+// };
+
+// let employee: Employee = {
+//   id: 1,
+//   name: "",
+//   retire: (date: Date) => {
+//     console.log(date);
+//   },
+// };
+
+///union types: https://youtu.be/d56mG7DezGs?t=3034
+// function kgToLbs(weight: number | string): number {
+//   //number | string alow us to make this: kgToLbs(10); or kgToLbs(10kg);
+//   //https://youtu.be/d56mG7DezGs?t=3137
+
+//   if (typeof weight === "number") return weight * 2.2;
+//   else return parseInt(weight) * 2.2;
+// }
+// kgToLbs(10);
+// kgToLbs("10kg");
+
+
+
+// Type intersection:
+// type Draggable = {
+//   drag: () => void;
+// };
+// type Resizable = {
+//   resize: () => void;
+// };
+// type UIWidget = Draggable & Resizable;
+
+// let textBox: UIWidget = {
+//   drag: () => {},
+//   resize: () => {},
+// };

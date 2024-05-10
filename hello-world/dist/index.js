@@ -1,10 +1,10 @@
 "use strict";
-var Size;
-(function (Size) {
-    Size[Size["Small"] = 1] = "Small";
-    Size[Size["Medium"] = 2] = "Medium";
-    Size[Size["Large"] = 3] = "Large";
-})(Size || (Size = {}));
-let mySize = Size.Medium;
-console.log(mySize);
+function kgToLbs(weight) {
+    if (typeof weight === "number")
+        return weight * 2.2;
+    else
+        return parseInt(weight) * 2.2;
+}
+kgToLbs(10);
+kgToLbs("10kg");
 //# sourceMappingURL=index.js.map
