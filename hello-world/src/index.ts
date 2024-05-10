@@ -161,18 +161,21 @@
 // let quantity: 50; // let quantity:50; means, that the let quantity:50= 50, only, not 51. not 49
 // type Quantity = 50 | 100;
 // let quantity: Quantity = 100;
-
 // type Metrics = 'sm'|'inch';
 
 // type Quantity = 50 | 100;
 // let quantity: Quantity = 100;
-
 // type Metrics = 'sm' | 'inch';
 // let newVariable: Quantity | Metrics;
 
 // type Quantity = 50 | 100;
 // let quantity: Quantity = 100;
-
 // type Metrics = 'sm' | 'inch';
 // let newVariable: [Quantity, Metrics] = [12, 'sm'];
 
+// null or undefined call  // "strictNullChecks": true,https://youtu.be/d56mG7DezGs?t=3500
+//name|null|undefined
+
+//optional property access operator
+
+//optional element access operator https://youtu.be/d56mG7DezGs?t=3768
