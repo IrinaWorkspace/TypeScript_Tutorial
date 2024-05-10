@@ -143,8 +143,6 @@
 // kgToLbs(10);
 // kgToLbs("10kg");
 
-
-
 // Type intersection:
 // type Draggable = {
 //   drag: () => void;
@@ -158,3 +156,23 @@
 //   drag: () => {},
 //   resize: () => {},
 // };
+
+//Literal (exact, specific)
+// let quantity: 50; // let quantity:50; means, that the let quantity:50= 50, only, not 51. not 49
+// type Quantity = 50 | 100;
+// let quantity: Quantity = 100;
+
+// type Metrics = 'sm'|'inch';
+
+// type Quantity = 50 | 100;
+// let quantity: Quantity = 100;
+
+// type Metrics = 'sm' | 'inch';
+// let newVariable: Quantity | Metrics;
+
+// type Quantity = 50 | 100;
+// let quantity: Quantity = 100;
+
+// type Metrics = 'sm' | 'inch';
+// let newVariable: [Quantity, Metrics] = [12, 'sm'];
+
